@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <script type="module" src="firebase-auth.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        input { padding: 10px; margin: 10px; width: 250px; }
+        button { padding: 10px 20px; background: green; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Signup</h2>
+    <input type="email" id="signup-email" placeholder="Enter Email"><br>
+    <input type="password" id="signup-password" placeholder="Enter Password"><br>
+    <button onclick="signup()">Signup</button>
+
+    <h2>Login</h2>
+    <input type="email" id="login-email" placeholder="Enter Email"><br>
+    <input type="password" id="login-password" placeholder="Enter Password"><br>
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+
+</body>
+</html>
